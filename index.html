@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>yeo@photos — Photo Gallery</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+ <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; }
+  body { font-family: 'Inter', sans-serif; background: #ffffff; color: #111111; min-height: 100vh; }
+  a { color: inherit; text-decoration: none; }
+
+  .header { max-width: 1200px; margin: 0 auto; padding: 36px 32px 20px; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ececec; }
+  .header .wordmark { font-weight: 700; font-size: 15pt; letter-spacing: -0.01em; color: #000; }
+  .header nav a { font-size: 8.5pt; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #9a9a9a; transition: color .2s; }
+  .header nav a:hover { color: #000; }
+
+  .intro { max-width: 1200px; margin: 0 auto; padding: 56px 32px 30px; }
+  .intro h2 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 30pt; color: #111; margin-bottom: 10px; }
+  .intro p { font-size: 10.5pt; font-weight: 300; color: #888; max-width: 480px; line-height: 1.8; }
+
+  .albums { max-width: 1200px; margin: 0 auto; padding: 0 32px 70px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .album-card { display: block; overflow: hidden; border-radius: 4px; background: #fafafa; transition: opacity .25s; }
+  .album-card:hover { opacity: .82; }
+  .album-card .thumb { width: 100%; aspect-ratio: 4/3; overflow: hidden; }
+  .album-card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .album-card .info { padding: 14px 2px; }
+  .album-card .info .title { font-size: 11pt; font-weight: 500; color: #111; letter-spacing: 0.01em; }
+  .album-card .info .meta { font-size: 8pt; color: #999; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; font-weight: 500; }
+
+  footer { max-width: 1200px; margin: 0 auto; padding: 8px 32px 36px; font-size: 8pt; color: #bbb; text-align: center; }
+
+  @media (max-width: 800px) { .albums { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) {
+   .header { padding: 26px 20px 16px; flex-direction: column; gap: 8px; align-items: flex-start; }
+   .intro { padding: 40px 20px 22px; }
+   .intro h2 { font-size: 22pt; }
+   .albums { grid-template-columns: 1fr; padding: 0 20px 50px; }
+  }
+ </style>
+</head>
+<body>
+
+<div class="header">
+ <div class="wordmark">yeo@photos</div>
+ <nav><a href="/Photogallery/">All Albums</a></nav>
+</div>
+
+<div class="intro">
+ <h2>Photo Gallery</h2>
+ <p>Albums from journeys we've taken.</p>
+</div>
+
+<div class="albums">
+
+ <a href="/Photogallery/Sumbar/" class="album-card">
+  <div class="thumb"><img src="/Photogallery/Sumbar/SUMBAR%20-%201%20of%2024.jpeg" alt="Sumbar" loading="eager"></div>
+  <div class="info">
+   <div class="title">Sumbar</div>
+   <div class="meta">Sumatra Barat, Indonesia &middot; 9 photos</div>
+  </div>
+ </a>
+
+</div>
+
+<footer>
+ yeo@photos &middot; Photo Gallery
+</footer>
+
+</body>
+</html>
