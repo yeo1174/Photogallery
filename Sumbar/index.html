@@ -11,7 +11,7 @@
   body { font-family: 'Playfair Display', 'Bodoni', Georgia, serif; background: #ffffff; color: #3E3228; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
 
   .header { display: flex; align-items: baseline; justify-content: space-between; padding: 22px 28px; flex: 0 0 auto; }
-  .header .wordmark { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 13pt; letter-spacing: -0.01em; color: #a6192e; text-decoration: none; }
+  .header .wordmark { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 200; font-size: 13pt; letter-spacing: 0.15em; color: #a6192e; text-decoration: none; }
   .header nav { display: flex; gap: 26px; }
   .header nav a { font-size: 8.5pt; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #a08d7d; text-decoration: none; transition: color .2s; }
   .header nav a:hover { color: #a6192e; }
@@ -55,11 +55,11 @@
 
 <main class="stage" id="stage">
  <button class="nav-arrow prev" id="prev" aria-label="Previous photo">&lsaquo;</button>
- <img id="photo" src="SUMBAR%20-%201%20of%2024.jpeg" alt="Sumbar photo 1 of 10">
+ <img id="photo" src="SUMBAR%20-%201%20of%2024.jpeg" alt="Sumbar photo 1 of 16">
  <button class="nav-arrow next" id="next" aria-label="Next photo">&rsaquo;</button>
 </main>
 
-<div class="counter"><span id="counter">1 / 10</span></div>
+<div class="counter"><span id="counter">1 / 16</span></div>
 <a class="grid-icon" href="/Photogallery/" title="All albums" aria-label="All albums">&#9638;</a>
 
 <footer>
@@ -69,7 +69,7 @@
 
 <script>
  (function () {
-  var photos = ["SUMBAR%20-%201%20of%2024.jpeg","SUMBAR%20-%202%20of%2024.jpeg","SUMBAR%20-%203%20of%2024.jpeg","SUMBAR%20-%204%20of%2024.jpeg","SUMBAR%20-%205%20of%2012.jpeg","SUMBAR%20-%205%20of%2024.jpeg","SUMBAR%20-%208%20of%2024.jpeg","SUMBAR%20-%209%20of%2024.jpeg","SUMBAR%20-%2014%20of%2024.jpeg","SUMBAR%20-%2015%20of%2024.jpeg"];
+  var photos = ["SUMBAR%20-%201%20of%2024.jpeg","SUMBAR%20-%202%20of%2024.jpeg","SUMBAR%20-%203%20of%2024.jpeg","SUMBAR%20-%204%20of%2024.jpeg","SUMBAR%20-%205%20of%2012.jpeg","SUMBAR%20-%205%20of%2024.jpeg","SUMBAR%20-%208%20of%2024.jpeg","SUMBAR%20-%209%20of%2024.jpeg","SUMBAR%20-%2011%20of%2012.jpeg","SUMBAR%20-%2012%20of%2012.jpeg","SUMBAR%20-%2014%20of%2024.jpeg","SUMBAR%20-%2015%20of%2024.jpeg","SUMBAR%20-%2021%20of%2024.jpeg","SUMBAR%20-%2022%20of%2024.jpeg","SUMBAR%20-%2023%20of%2024.jpeg","SUMBAR%20-%2024%20of%2024.jpeg"];
   var i = 0;
   var img = document.getElementById('photo');
   var counter = document.getElementById('counter');
