@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Sumbar — Photos</title>
+ <title>Monochrome 2026 — Photos</title>
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
  <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -55,11 +55,11 @@
 
 <main class="stage" id="stage">
  <button class="nav-arrow prev" id="prev" aria-label="Previous photo">&lsaquo;</button>
- <img id="photo" src="SUMBAR%20-%201%20of%2024.webp" alt="Sumbar photo 1 of 16">
+ <img id="photo" src="Monochrome%202026%20-%201%20of%208.webp" alt="Monochrome 2026 photo 1 of 8">
  <button class="nav-arrow next" id="next" aria-label="Next photo">&rsaquo;</button>
 </main>
 
-<div class="counter"><span id="counter">1 / 16</span></div>
+<div class="counter"><span id="counter">1 / 8</span></div>
 <a class="grid-icon" href="/Photogallery/" title="All albums" aria-label="All albums">&#9638;</a>
 
 <footer>
@@ -69,7 +69,7 @@
 
 <script>
  (function () {
-  var photos = ["SUMBAR%20-%201%20of%2024.webp","SUMBAR%20-%202%20of%2024.webp","SUMBAR%20-%203%20of%2024.webp","SUMBAR%20-%204%20of%2024.webp","SUMBAR%20-%205%20of%2024.webp","SUMBAR%20-%208%20of%2024.webp","SUMBAR%20-%209%20of%2024.webp","SUMBAR%20-%2014%20of%2024.webp","SUMBAR%20-%2015%20of%2024.webp","SUMBAR%20-%2021%20of%2024.webp","SUMBAR%20-%2022%20of%2024.webp","SUMBAR%20-%2023%20of%2024.webp","SUMBAR%20-%2024%20of%2024.webp"];
+  var photos = ["Monochrome%202026%20-%201%20of%208.webp","Monochrome%202026%20-%202%20of%208.webp","Monochrome%202026%20-%203%20of%208.webp","Monochrome%202026%20-%204%20of%208.webp","Monochrome%202026%20-%205%20of%208.webp","Monochrome%202026%20-%206%20of%208.webp","Monochrome%202026%20-%207%20of%208.webp","Monochrome%202026%20-%208%20of%208.webp"];
   var i = 0;
   var img = document.getElementById('photo');
   var counter = document.getElementById('counter');
@@ -82,7 +82,7 @@
   function show(n) {
    i = Math.max(0, Math.min(photos.length - 1, n));
    img.src = photos[i];
-   img.alt = 'Sumbar photo ' + (i + 1) + ' of ' + photos.length;
+   img.alt = 'Monochrome 2026 photo ' + (i + 1) + ' of ' + photos.length;
    counter.textContent = (i + 1) + ' / ' + photos.length;
    prev.disabled = (i === 0);
    next.disabled = (i === photos.length - 1);
