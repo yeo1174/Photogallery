@@ -10,13 +10,9 @@
   html { -webkit-font-smoothing: antialiased; }
   body { font-family: 'Playfair Display', 'Bodoni', Georgia, serif; background: #ffffff; color: #3E3228; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
 
-  .header { display: flex; align-items: baseline; justify-content: space-between; padding: 22px 28px; flex: 0 0 auto; }
+  .header { display: flex; align-items: center; padding: 22px 28px; flex: 0 0 auto; }
   .header .mark-link { display: block; line-height: 0; }
   .header .mark { height: 60px; width: auto; display: block; mix-blend-mode: multiply; }
-  .header nav { display: flex; gap: 26px; }
-  .header nav a { font-size: 8.5pt; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #a08d7d; text-decoration: none; transition: color .2s; }
-  .header nav a:hover { color: #a6192e; }
-
   .stage { flex: 1 1 auto; position: relative; display: flex; align-items: center; justify-content: center; padding: 8px 76px; min-height: 0; }
   .stage img { max-height: 74vh; max-width: 100%; display: block; object-fit: contain; }
 
@@ -30,8 +26,7 @@
   footer { flex: 0 0 auto; background: #f7f4ef; display: flex; justify-content: center; align-items: center; padding: 13px 28px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 8pt; color: #8f7a68; }
 
   @media (max-width: 600px) {
-   .header { flex-direction: column; align-items: flex-start; gap: 10px; padding: 18px 20px 10px; }
-   .header nav { gap: 18px; }
+   .header { padding: 18px 20px 10px; }
    .stage { padding: 6px 48px; }
    .nav-arrow { font-size: 26pt; padding: 8px; }
    .nav-arrow.prev { left: 2px; }
@@ -43,9 +38,6 @@
 
 <header class="header">
  <a class="mark-link" href="/Photogallery/" aria-label="yeo@photos &mdash; all albums"><img class="mark" src="/Photogallery/logo.webp" alt="yeo@photos"></a>
- <nav>
-  <a href="/Photogallery/">All Albums</a>
- </nav>
 </header>
 
 <main class="stage" id="stage">
